@@ -8,7 +8,8 @@ const todoCompleted = document.querySelector('.todo-completed');
 
 let todoData = [];
 
-todoData = JSON.parse(localStorage.getItem('todo'));
+todoData = JSON.parse(localStorage.getItem('todo')) || [];
+
 
 const renderTodo = function () {
 
